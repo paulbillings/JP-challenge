@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: rgb(255, 255, 255);
+  font-family: Nunito, sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(0, 128, 128, 0.6);
+  color: white;
+}
+
+nav h1 {
+  padding-left: 6rem;
+}
+
+nav .pageOptions {
+  display: flex;
+  align-items: center;
+  padding-right: 6rem;
+}
+
+nav ul li {
+  padding: 0 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+#home {
+  background: linear-gradient(to bottom, transparent, 70%, white),
+    url("https://images.unsplash.com/photo-1545893835-abaa50cbe628?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  color: rgb(3, 79, 3);
+  margin-bottom: 0;
+}
+
+#home h3 {
+  margin-top: 0;
+}
+
+#home p {
+  margin-top: 0;
+}
+
+#home .container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20vw;
+}
+
+.chevronRight {
+  width: 2vw;
+  margin-left: 0.5vw;
+}
+
+.chevronDown {
+  margin-top: 2vh;
+}
+
+.readMore {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#section1 {
+  background: url("https://images.unsplash.com/photo-1619441207978-3d326c46e2c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#section2 {
+  background: url("https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+footer {
+  height: 20vh;
+}
