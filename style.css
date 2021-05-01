@@ -52,7 +52,7 @@ section {
     url("https://images.unsplash.com/photo-1545893835-abaa50cbe628?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
 }
 
 #home h1 {
@@ -87,6 +87,11 @@ section {
   margin-top: 2vh;
 }
 
+.chevronUp {
+  margin-top: 2vh;
+  width: 26px;
+}
+
 .readMore {
   display: flex;
   align-items: center;
@@ -94,6 +99,19 @@ section {
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+
+#overflow {
+  display: none;
+  height: 60vh;
+  background-color: rgb(255, 254, 254);
 }
 
 #section1 {

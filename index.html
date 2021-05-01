@@ -19,7 +19,7 @@
       </nav>
     </header>
     <section id="home">
-      <div class="container">
+      <div class="container" id="homeContainer">
         <h1 class="name">Company Name</h1>
         <h3>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et beatae
@@ -33,17 +33,64 @@
           iste, eligendi voluptas iure exercitationem rem vel enim assumenda
           nostrum!
         </p>
-        <a class="readMore" href=""
-          >Read more
+        <div id="more" style="display: none">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
+            enim similique. Incidunt fugiat ad ipsam veniam delectus molestiae,
+            tenetur nemo. Harum labore praesentium accusantium officiis magni
+            dolorum, esse dolor iure! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Unde eum nobis assumenda inventore quaerat illo,
+            sequi architecto illum earum, repudiandae, sit possimus esse! Magni
+            porro tenetur obcaecati nesciunt, laborum voluptatibus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
+            enim similique. Incidunt fugiat ad ipsam veniam delectus molestiae,
+            tenetur nemo. Harum labore praesentium accusantium officiis magni
+            dolorum, esse dolor iure!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
+            enim similique. Incidunt fugiat ad ipsam veniam delectus molestiae,
+            tenetur nemo. Harum labore praesentium accusantium officiis magni
+            dolorum, esse dolor iure! Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Atque vero ipsa neque a tempora ea delectus quidem
+            saepe! Dolorum magnam optio, soluta eveniet expedita laboriosam
+            nihil praesentium quis tempora. Sed? Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Cupiditate iste ea facere quod eum
+            nesciunt veritatis, dignissimos fugit neque molestias explicabo,
+            expedita aspernatur delectus at quia quas dolor, non perferendis!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
+            enim similique. Incidunt fugiat ad ipsam veniam delectus molestiae,
+            tenetur nemo. Harum labore praesentium accusantium officiis magni
+            dolorum, esse dolor iure!
+          </p>
+        </div>
+        <button class="readMore" onclick="more()">
+          <span id="moreButton">Read More</span>
           <img
             class="chevronRight"
             src="https://img.icons8.com/ios-glyphs/50/26e07f/circled-chevron-right.png"
-        /></a>
-        <div class="chevronDown">
-          <img src="https://img.icons8.com/metro/26/26e07f/chevron-down.png" />
+          />
+        </button>
+        <div>
+          <img
+            class="chevronDown"
+            id="chevronDown"
+            src="https://img.icons8.com/metro/26/26e07f/chevron-down.png"
+          />
+          <img
+            class="chevronUp"
+            id="chevronUp"
+            style="display: none"
+            src="https://img.icons8.com/ios-filled/50/26e07f/chevron-up.png"
+          />
         </div>
       </div>
     </section>
+    <section id="overflow"></section>
     <section id="section1"></section>
     <section id="section2"></section>
     <footer>
