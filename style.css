@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: rgba(0, 128, 128, 0.6);
+  --box-color: rgb(38, 202, 159);
 }
 
 * {
@@ -17,6 +18,30 @@ body {
   margin: 0;
   background: rgb(255, 255, 255);
   font-family: Nunito, sans-serif;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.greenBox {
+  display: flex;
+  font-size: 0.9rem;
+  width: 80px;
+  height: 80px;
+  background-color: var(--box-color);
+  color: white;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -101,18 +126,6 @@ section {
   width: 26px;
 }
 
-.readMore {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 #more {
   display: none;
 }
@@ -174,7 +187,7 @@ section {
 
 .slideBox ul {
   padding-left: 25px;
-  list-style-image: url("https://img.icons8.com/color/24/4a90e2/blur.png");
+  list-style-image: url("https://img.icons8.com/color/16/4a90e2/blur.png");
 }
 
 .slideBox ul li {
@@ -213,11 +226,62 @@ section {
   font-size: 1rem;
 }
 
+.numberBox {
+  position: relative;
+  top: 88%;
+  right: 5.5%;
+}
+
 #section2 {
   background: url("https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  display: flex;
+  align-items: center;
+}
+
+.whiteBox {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.whiteBox h1 {
+  width: 5vw;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.whiteBox .text {
+  padding: 40px 60px;
+}
+
+.whiteBox p {
+  font-size: 0.9rem;
+}
+
+.whiteBox hr {
+  background-color: black;
+  height: 3px;
+  width: 20vw;
+  border: none;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.whiteBox .btn {
+  padding-left: 0;
+}
+
+.section2Buttons {
+  display: flex;
+  width: 165px;
+  justify-content: space-between;
 }
 
 footer {
