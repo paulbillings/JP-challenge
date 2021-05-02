@@ -1,3 +1,4 @@
+// expand text on homepage
 function more() {
   let moreText = document.getElementById("more");
   let btnText = document.getElementById("moreButton");
@@ -24,4 +25,33 @@ function more() {
     chevronDown.style.display = "inline";
     window.location.href = "#home";
   }
+}
+
+// slider for section 2
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("assetSlides");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
 }

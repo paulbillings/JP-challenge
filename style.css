@@ -241,6 +241,32 @@ section {
   align-items: center;
 }
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .whiteBox {
   display: flex;
   flex-direction: column;
@@ -282,6 +308,14 @@ section {
   display: flex;
   width: 165px;
   justify-content: space-between;
+}
+
+.section2Buttons .left {
+  cursor: pointer;
+}
+
+.section2Buttons .right {
+  cursor: pointer;
 }
 
 footer {
