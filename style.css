@@ -47,6 +47,7 @@ body {
 nav {
   position: fixed;
   width: 100vw;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -55,8 +56,19 @@ nav {
   z-index: 100;
 }
 
-nav h1 {
+.logo-small-white {
+  width: 3vw;
+}
+
+.navLeft {
+  display: flex;
   padding-left: 6rem;
+  align-items: center;
+}
+
+nav h1 {
+  padding-left: 0.8rem;
+  font-size: 1.2rem;
 }
 
 nav .pageOptions {
