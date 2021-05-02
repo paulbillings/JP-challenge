@@ -318,6 +318,78 @@ section {
   cursor: pointer;
 }
 
+.left :hover,
+.right :hover {
+  transform: scale(1.4);
+  transition-duration: 1s;
+}
+
 footer {
   height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+.footerContainer {
+  width: 70vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-small-black {
+  width: 4vw;
+}
+
+.logo-full-black {
+  width: 12vw;
+}
+
+.rightFooter {
+  height: 14vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.leftFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.leftFooter p {
+  margin-top: 5px;
+}
+
+.accessPrivacyFooter {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.accessPrivacyFooter a {
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.accessPrivacyFooter p {
+  margin: 0 10px;
+}
+
+.backToTop {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.backToTop :hover {
+  transform: scale(1.4) translate(0px, -5px);
+  transition-duration: 1s;
 }
