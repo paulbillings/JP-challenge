@@ -153,31 +153,60 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
-.slider {
+.carouselContainer {
   display: flex;
-  width: 60vw;
-  height: 90vh;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
-.slides {
+.carousel {
+  width: 60vw;
+  height: 70vh;
+  bottom: 50px;
+}
+
+/* .carousel-cell {
+  width: 33%;
+  height: 95%;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+} */
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -10vh;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 25%;
+  margin: 0;
+  background: white;
+  border-radius: 5px;
+}
+
+.flickity-prev-next-button {
+  display: none;
+}
+
+/* .slides {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-}
+} */
 
-.slideBox {
-  width: 18vw;
-  height: 100%;
+.carousel-cell {
+  width: 31%;
+  height: 97%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -192,21 +221,21 @@ section {
   box-shadow: inset 0px 0px 0px 1px grey;
 }
 
-.slideBox h2 {
+.carousel-cell h2 {
   font-size: 1.9rem;
   margin: 2px 0 5px 0;
 }
 
-.slideBox ul {
+.carousel-cell ul {
   padding-left: 25px;
   list-style-image: url("https://img.icons8.com/color/16/4a90e2/blur.png");
 }
 
-.slideBox ul li {
+.carousel-cell ul li {
   padding: 10px 0;
 }
 
-.slides::-webkit-scrollbar {
+/* .slides::-webkit-scrollbar {
   width: 10px;
   height: 5px;
 }
@@ -228,15 +257,15 @@ section {
   margin-top: 60px;
   border-radius: 10px;
   /* background: #eee; */
-  transform-origin: center center;
+/* transform-origin: center center;
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
-}
+  font-size: 1rem; */
+/* } */
 
 .numberBox {
   position: relative;
