@@ -27,12 +27,20 @@ function more() {
   }
 }
 
-let elem = document.querySelector(".main-carousel");
-let flkty = new Flickity(elem, {
-  // options
-  cellAlign: "left",
-  contain: true,
+// carousel in section 1
+let flkty = new Flickity(".carousel", {
+  groupCells: 3,
+  autoPlay: 4000,
 });
+let numberBox = document.querySelector(".numberBox");
+
+function updateStatus() {
+  let slideNumber = flkty.selectedIndex + 1;
+  numberBox.textContent = slideNumber + "/" + flkty.slides.length;
+}
+updateStatus();
+
+flkty.on("select", updateStatus);
 
 // slider for section 2
 let slideIndex = 1;
