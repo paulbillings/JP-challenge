@@ -31,6 +31,7 @@ function more() {
 let flkty = new Flickity(".carousel", {
   groupCells: 3,
   autoPlay: 4000,
+  pauseAutoPlayOnHover: false,
 });
 let numberBox = document.querySelector(".numberBox");
 
