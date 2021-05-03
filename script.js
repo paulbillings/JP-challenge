@@ -27,6 +27,13 @@ function more() {
   }
 }
 
+let elem = document.querySelector(".main-carousel");
+let flkty = new Flickity(elem, {
+  // options
+  cellAlign: "left",
+  contain: true,
+});
+
 // slider for section 2
 let slideIndex = 1;
 showSlides(slideIndex);
